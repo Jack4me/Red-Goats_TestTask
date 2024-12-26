@@ -1,0 +1,42 @@
+{
+  "Products": [
+    {
+      "Name": "Speed Boots",
+      "Price": 10.0,
+      "IconPath": "Icons/Boost1",
+      "Category": "Booster"
+
+    },
+    {
+      "Name": "Magic Sword",
+      "Price": 30.0,
+      "IconPath": "Icons/Boost2",
+      "Category": "Booster"
+    },
+    {
+      "Name": "Heavy Helmet",
+      "Price": 15.0,
+      "IconPath": "Icons/Boost3",
+      "Category": "Booster"
+    },
+    {
+      "Name": "Iron Shield",
+      "Price": 25.0,
+      "IconPath": "Icons/Boost4",
+      "Category": "Booster"
+    },
+    {
+      "Name": "7 days",
+      "Price": 7.0,
+      "IconPath": "Icons/Subs1",
+      "Category": "Subscription"
+    },
+    {
+      "Name": "30 days",
+      "Price": 20.0,
+      "IconPath": "Icons/Subs2",
+      "Category": "Subscription"
+    }
+
+  ]
+}
