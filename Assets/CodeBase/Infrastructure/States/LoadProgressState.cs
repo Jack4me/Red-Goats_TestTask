@@ -7,7 +7,6 @@
         public LoadProgressState(GameStateMachine gameStateMachine)
         {
             _gameStateMachine = gameStateMachine;
-        
         }
 
         public void Enter()

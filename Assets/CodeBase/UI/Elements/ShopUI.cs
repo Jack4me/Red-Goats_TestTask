@@ -1,7 +1,7 @@
 using System.Collections.Generic;
+using CodeBase.Infrastructure.Services;
 using CodeBase.Infrastructure.Services.ProductService;
 using CodeBase.Logic.Card;
-using Infrastructure.Services;
 using UnityEngine;
 using Product = CodeBase.Logic.Card.Product;
 
@@ -13,7 +13,8 @@ namespace CodeBase.UI.Elements
 
         public Transform subscriptionContainer;
         public Transform boosterContainer;
-        public GameObject cardPrefab;
+        public GameObject subscriptionCardPrefab;
+        public GameObject boosterCardPrefab;
 
         void Start()
         {
@@ -23,21 +24,25 @@ namespace CodeBase.UI.Elements
 
         void CreateProductCards()
         {
-            List<Product> products = _productDataService.LoadProducts();
-            foreach (Product product in products)
-            {
-                if (product.Category == "Subscription")
-                    CreateCard(product, subscriptionContainer);
-                else if (product.Category == "Booster")
-                    CreateCard(product, boosterContainer);
-            }
-        }
+            
+            
+            List<SubscriptionData> subscriptions = _productDataService.LoadProducts<SubscriptionData>();
+            foreach (SubscriptionData subscription in subscriptions)
+                CreateCard(subscription, subscriptionContainer, subscriptionCardPrefab);
 
-        void CreateCard(Product product, Transform container)
+            List<BoosterData> boosters = _productDataService.LoadProducts<BoosterData>();
+            foreach (BoosterData booster in boosters)
+                CreateCard(booster, boosterContainer, boosterCardPrefab);
+        }
+        
+        void CreateCard(Product product, Transform container, GameObject cardPrefab)
         {
             GameObject card = Instantiate(cardPrefab, container);
             ProductCard cardScript = card.GetComponent<ProductCard>();
-            cardScript.Setup(product);
+           
+            product.SetupCard(cardScript);
+            
+            
         }
     }
 }

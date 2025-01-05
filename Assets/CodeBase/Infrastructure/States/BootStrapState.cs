@@ -1,10 +1,10 @@
 ﻿using CodeBase.Infrastructure.AssetsManagement;
 using CodeBase.Infrastructure.Factory;
+using CodeBase.Infrastructure.Services;
 using CodeBase.Infrastructure.Services.ProductService;
 using CodeBase.StaticData;
 using CodeBase.UI.Services.Factory;
 using CodeBase.UI.Services.Windows;
-using Infrastructure.Services;
 using UI.Services;
 
 namespace CodeBase.Infrastructure.States

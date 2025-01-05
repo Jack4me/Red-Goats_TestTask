@@ -1,9 +1,11 @@
-﻿using CodeBase.Infrastructure.AssetsManagement;
+﻿using System;
+using CodeBase.Infrastructure.AssetsManagement;
 using CodeBase.StaticData;
 using CodeBase.StaticData.Windows;
 using CodeBase.UI.Services.Windows;
 using CodeBase.UI.Windows;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace CodeBase.UI.Services.Factory
 {
@@ -26,9 +28,18 @@ namespace CodeBase.UI.Services.Factory
         {
             WindowConfigData shop = _staticData.ForWindow(WindowIdEnum.Shop);
             window = Object.Instantiate(shop.Prefab, _uiRoot);
-            _shopButton?.SetActive(false);
+            if (_shopButton == null)
+            {
+                Debug.Log("_shopButton IS NULL)" );
+            }
+            else
+            {
+                _shopButton?.SetActive(false);
+            }
+
             window.OnClose += ShowShopButton;
         }
+
         public void CreateRoot()
         {
             _uiRoot = _assets.Instantiate(AssetPath.UI_ROOT).transform;

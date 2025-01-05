@@ -92,7 +92,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subscriptionContainer: {fileID: 6667444887840636364}
   boosterContainer: {fileID: 1379855495783075278}
-  cardPrefab: {fileID: 3013267791952209560, guid: 50f85a1b8f656e740b6b38171a8f8d81, type: 3}
+  subscriptionCardPrefab: {fileID: 3013267791952209560, guid: 50f85a1b8f656e740b6b38171a8f8d81, type: 3}
+  boosterCardPrefab: {fileID: 3013267791952209560, guid: 419e2b08c3289654c971d12f040c1847, type: 3}
 --- !u!1 &2505924084364239083
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
-﻿using CodeBase.UI.Services.Windows;
-using Infrastructure.Services;
+﻿using CodeBase.Infrastructure.Services;
+using CodeBase.UI.Services.Windows;
 using UI.Services;
 using UnityEngine;
 using UnityEngine.UI;

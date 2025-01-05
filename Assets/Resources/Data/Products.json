@@ -4,39 +4,46 @@
       "Name": "Speed Boots",
       "Price": 10.0,
       "IconPath": "Icons/Boost1",
-      "Category": "Booster"
+      "Type": "Booster",
+      "BoosterType": "Speed"
+
 
     },
     {
       "Name": "Magic Sword",
       "Price": 30.0,
       "IconPath": "Icons/Boost2",
-      "Category": "Booster"
+      "Type": "Booster",
+      "BoosterType": "Experience"
     },
     {
       "Name": "Heavy Helmet",
       "Price": 15.0,
       "IconPath": "Icons/Boost3",
-      "Category": "Booster"
+      "Type": "Booster",
+      "BoosterType": "Defence + 7"
     },
     {
       "Name": "Iron Shield",
       "Price": 25.0,
       "IconPath": "Icons/Boost4",
-      "Category": "Booster"
+      "Type": "Booster",
+      "BoosterType": "Defence + 15"
     },
     {
-      "Name": "7 days",
+      "Name": "Subscription",
       "Price": 7.0,
       "IconPath": "Icons/Subs1",
-      "Category": "Subscription"
+      "Type": "Subscription",
+      "DurationMonths": "7 days"
     },
     {
-      "Name": "30 days",
+      "Name": "Subscription",
       "Price": 20.0,
       "IconPath": "Icons/Subs2",
-      "Category": "Subscription"
-    }
+      "Type": "Subscription",
+      "DurationMonths": "1 month"
 
+    }
   ]
 }

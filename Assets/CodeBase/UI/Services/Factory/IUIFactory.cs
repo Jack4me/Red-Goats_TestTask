@@ -1,5 +1,4 @@
 ﻿using CodeBase.Infrastructure.Services;
-using Infrastructure.Services;
 using UnityEngine;
 
 namespace CodeBase.UI.Services.Factory {
